@@ -18,6 +18,25 @@
  * Bijvoorbeeld een string variabele met de naam 'teacherName' en als waarde 'Berend'
  */
 
+var name = "Wesly";
+var surname = "Lodewijks";
+var streetname = "trinidadstraat";
+var city = "purmerend";
+var country = "nederland";
+
+var age = 18;
+var streetnumber = 18;
+var balance = 13000;
+var weight = 64;
+var yearOfBirth = 1998;
+
+var isSick = false;
+var isCool = true;
+var isMale = true;
+var isBlond = false;
+var isTired = true;
+
+
 /**
  * Opdracht 2: Arrays
  * Bedenk 3 arrays en vul ze met primitives
@@ -26,11 +45,25 @@
  * Bijvoorbeeld een Array met de naam 'students' en als waarde ['Berend', "Erwin']
  */
 
+var friends = ["nino", "jordy", "gerwin", "kelvin"];
+var weather = ["sun", "snow", "rain", "cloudy"];
+var grades = ["6", "5", "7", "9"];
+
+console.log(friends.length);
+console.log(weather.length);
+console.log(grades.length);
+
+
+
 /**
  * Opdracht 3: Arrays push
  * Maak een lege array aan
  * push er een string in
  */
+
+var classes = [];
+classes.push("SCT");
+classes.push("FRO");
 
 /**
  * Opdracht 4: Array splice
@@ -38,6 +71,10 @@
  * Gooi de naam op de 1e plek weg
  * Gooi de naam op de 3e plek weg
  */
+
+var food = ["apple", "peer", "orange", "lemon"];
+food.splice(0, 1);
+food.splice(2, 1);
 
 /**
  * Opdracht 5: Objects
@@ -52,6 +89,14 @@
  * Bijvoorbeeld een functie met de naam 'multiply'. Deze functie verwacht 2 parameters value & multiplier
  * console.log( value * multiplier)
  */
+
+function Multiply(value1, value2){
+    var answer = value1 * value2;
+    return answer;
+}
+
+var answer = Multiply(3, 5);
+console.log(answer);
 
 /**
  * Opdracht 7: Function & objects
