@@ -273,6 +273,10 @@ String.prototype.replaceAll = function(search, replacement) {
  * console.log() de naam die deze functie returned
  */
 
+  var autos = ["toyota", "ford", "fiat"];
+
+  console.log(autos.random());
+
 /**
  * Opdracht 17: Custom prototype method gebruiken
  * Maak een variabele waarin je een lange tekst opslaat
@@ -280,6 +284,11 @@ String.prototype.replaceAll = function(search, replacement) {
  * op alle plekken te vervangen voor een ander woord
  * console.log() deze gewijzigde tekst
  */
+
+    var langeTekst = "Dit is die lange tekst waar bij ik ik ik het zelfde woord woord moet uh uh zeggen uhhh.";
+
+    console.log(langeTekst.replaceAll("ik","doei"));
+    console.log(langeTekst.replaceAll("uh","guido"));
 
 /**
  * Opdracht 18: Prototype based language
