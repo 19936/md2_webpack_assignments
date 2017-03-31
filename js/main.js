@@ -87,6 +87,35 @@ food.splice(2, 1);
  * en hoe oud hij is
  */
 
+var mobiel = {
+    merk:"Apple",
+    model:"Iphone 6",
+    value: 150
+};
+
+var laptop = {
+    merk:"MSI",
+    value: 1000
+};
+
+var OV = {
+    holderName:"wesly",
+    color:"yellow",
+    balance:12.3
+}
+
+var wallet = {
+    color:"black",
+    balance:75,
+    material:"leather"
+}
+
+var girlfriend = {
+    age:16,
+    name:"samantha",
+
+}
+
 /**
  * Opdracht 6: Functions
  * Bedenk 4 functies die handig zouden kunnen zijn
@@ -98,9 +127,31 @@ function Multiply(value1, value2){
     var answer = value1 * value2;
     return answer;
 }
-
 var answer = Multiply(3, 5);
 console.log(answer);
+
+function MonthsOnEarth(jaren, maanden) {
+    var tijd = (jaren * 12) + maanden;
+    return tijd;
+}
+var tijd = MonthsOnEarth(18, 7);
+console.log(tijd);
+
+function Difrence(value1, value2){
+    var answer2 = value1 - value2;
+    return answer2;
+};
+var answer2 = Difrence(20, 12);
+console.log(answer2);
+
+function Square(number) {
+    var uitkomst = number * number;
+    return uitkomst;
+}
+
+var uitkomst = Square(6);
+console.log(uitkomst);
+
 
 /**
  * Opdracht 7: Function & objects
@@ -109,11 +160,31 @@ console.log(answer);
  * lastname opgeslagen roep deze functie aan en console.log() de waarde
  */
 
+function Person(Firstname, Lastname){
+    var person = {
+        fisrtname: Firstname,
+        lastname: Lastname
+    }
+    return person;
+}
+console.log(Person("wesly", "lodewijks"));
+
 /**
  * Opdracht 8: Functions, objects
  * Maak een object genaamd 'student'
  * Maak in dit object bij het aanmaken een functie aan met de naam 'showName'
  */
+
+var student = {
+    naam: "wesly",
+    leeftijd: 18,
+    showName: function(){
+        console.log(student)
+}
+}
+console.log(student.showName())
+
+
 
 /**
  * Opdracht 9: Arrays & for loops
