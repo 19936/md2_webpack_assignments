@@ -295,7 +295,7 @@ String.prototype.replaceAll = function(search, replacement) {
  * Geef antwoord op onderstaande vraag
  */
 console.log('Waarom heet JavaScript een prototype based language?',
-            'jouw antwoord');
+            'Omdat er altijd een proto object is?');
 
 
 /**
@@ -304,6 +304,15 @@ console.log('Waarom heet JavaScript een prototype based language?',
  * je bij elke array een empty() functie kunt aanroepen.
  * Zorg ervoor dat deze functie er is en laat met 3 arrays zien dat hij werkt
  */
+Array.prototype.empty = function(){
+    this.length = [];
+};
+
+var arrayTest = ["test","test"];
+console.log(arrayTest);
+console.log(arrayTest.empty());
+
+
 
 /**
  * Opdracht 20: Monkey patching (?)
@@ -311,3 +320,19 @@ console.log('Waarom heet JavaScript een prototype based language?',
  * functies van Arrays te overschrijven met een eigen functie.
  * Maak 2 arrays aan en laat zien dat je code werkt
  */
+
+
+ Array.prototype.push = function(){
+    console.log(5);
+
+ };
+
+    var names = ["weska","jordina"];
+
+    //names.push();
+
+ Array.prototype.splice = function(){
+    alert(this);
+ };
+
+    names.splice();
